@@ -11,13 +11,17 @@ var numbers = [
   [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
 ];
 
-// your code goes here
+// create for loop to run through each row of an array
 for (var row = 0 ; row < numbers.length ; row ++) {
+  // create a nested for loop to run through each column of the array
   for ( var column = 0 ; column < numbers[row].length ; column ++) {
+    //create if statement to grab each item [row][column] and check for divisibility of 2.
     if (numbers[row][column]%2 === 0)
+    //set even number as an 'even' string.
       numbers[row][column]= 'even';
     else 
+    // set number as an 'odd' string.
       numbers[row][column] = 'odd';
-  }
+  }//push results to console
 }
 console.log(numbers);
